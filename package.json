@@ -6,6 +6,10 @@
   "scripts": {
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cinkagan/react-component-tabs.git"
+  },
   "author": "S. Kağan Cin",
   "license": "ISC",
   "devDependencies": {
