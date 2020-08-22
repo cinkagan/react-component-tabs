@@ -1,14 +1,14 @@
-# Beautiful switch with react js
+# A useful react tabs library
 [![npm](https://img.shields.io/npm/v/react-tabs-with-components.svg?style=flat-square)](https://www.npmjs.com/package/react-tabs-with-components)
 
 <img src="https://media.giphy.com/media/fr47a97LEaSLHpuDvV/giphy.gif" />
 
-Simple, useful and beautiful switch
+Using tab with component list
 #
 ## Installation
 
 ```bash
-npm install react-beautiful-switch
+npm install react-tabs-with-components
 ```
 
 
@@ -16,7 +16,7 @@ npm install react-beautiful-switch
 
 ```javascript
 import React from 'react';
-import Tabs from 'react-component-tabs';
+import Tabs from 'react-tabs-with-components';
 
 function Tab1() {
   return (<div>
@@ -60,5 +60,23 @@ export default App;
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | deafultValue | int | 0 | Which step will be active at the beginning |
-| tabs | array | **Required**  | Component list of steps |
+| tabs | array | **Required**   | Component list of steps |
+
+
+#
+## Notes
+- tabs prop should look like this
+
+```c#
+{
+    title: <string>,
+    component: <component>,
+    visible: <bool>  // If true is given, tabs are also shown. If false, the tabs are also hidden.
+}
+```
+- If the tab is closed, only the visible value is false and the tab is not destroyed.
+
+- "visible" value must be true to open closed tab
+
+
 
